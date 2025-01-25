@@ -26,3 +26,17 @@ Seguite le istruzioni su http://numeronesoft.ddns.net per installare il reposito
 ## Su Windows
 
 [![winget](https://user-images.githubusercontent.com/49786146/159123313-3bdafdd3-5130-4b0d-9003-40618390943a.png)](https://marticliment.com/wingetui/share?pid=GiulioSorrentino.Diario&pname=Diario&psource=Winget:%20winget)
+
+## Internazionalizzazione
+
+Aprire il file MainWindows.axaml, all'interno del tag MainWindow.Resources ci sono qulli che vengono chiamati dizionari.
+BIsogna copiare un dizioario ed aggiungrlo alla fine dei dizionari, chiamarlo con la denominazione internazionale a due carattri ella lingua (it per italiano, pt per portoghese, es per spagnolo e via dicendo) e bisogna tradurre tutto qullo che è il contenuto del tag x:string, non il parametro.
+
+## Screenshots
+
+## Su debian
+
+![Schermata del 2025-01-25 18-21-39](https://github.com/user-attachments/assets/c38cdc21-7641-475b-9da1-0a45bdad6804)
+![Schermata del 2025-01-25 18-21-44](https://github.com/user-attachments/assets/186606e0-5ece-46ab-a726-38ea6837fa26)
+![Schermata del 2025-01-25 18-22-00](https://github.com/user-attachments/assets/f420b0cd-1645-44dc-b5e9-adb0757ed153)
+![Schermata del 2025-01-25 18-22-08](https://github.com/user-attachments/assets/83e89800-52a7-417e-a86c-308bc5bd75a6)
