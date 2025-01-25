@@ -40,3 +40,9 @@ BIsogna copiare un dizioario ed aggiungrlo alla fine dei dizionari, chiamarlo co
 ![Schermata del 2025-01-25 18-21-44](https://github.com/user-attachments/assets/186606e0-5ece-46ab-a726-38ea6837fa26)
 ![Schermata del 2025-01-25 18-22-00](https://github.com/user-attachments/assets/f420b0cd-1645-44dc-b5e9-adb0757ed153)
 ![Schermata del 2025-01-25 18-22-08](https://github.com/user-attachments/assets/83e89800-52a7-417e-a86c-308bc5bd75a6)
+
+## Su Windows
+
+<img width="1431" alt="2025-01-25 (5)" src="https://github.com/user-attachments/assets/37f734f6-1efb-4365-be70-c940b9ce0098" />
+<img width="1431" alt="2025-01-25 (4)" src="https://github.com/user-attachments/assets/10be54ad-3d2c-4606-a842-0d90d06755d8" />
+
