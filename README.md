@@ -46,3 +46,6 @@ BIsogna copiare un dizioario ed aggiungrlo alla fine dei dizionari, chiamarlo co
 <img width="1431" alt="2025-01-25 (5)" src="https://github.com/user-attachments/assets/37f734f6-1efb-4365-be70-c940b9ce0098" />
 <img width="1431" alt="2025-01-25 (4)" src="https://github.com/user-attachments/assets/10be54ad-3d2c-4606-a842-0d90d06755d8" />
 
+## Donazione
+
+http://numerone.altervista.org/donazioni.php
