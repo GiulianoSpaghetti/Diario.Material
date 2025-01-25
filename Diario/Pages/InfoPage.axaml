@@ -1,0 +1,15 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:pages="clr-namespace:Diario.Pages"
+			 x:DataType="pages:InfoPage"
+			 x:Class="Diario.Pages.InfoPage">
+	<StackPanel>
+		<Label>Version: 0.6</Label>
+		<Label>ⓒ Giulio Sorrentino 2025 some right reserved</Label>
+		<Label>This software is under GPLv3 or, at your opinion, any later version</Label>
+		<Label>http.//github.com/GiulianoSpaghetti/Diario.metal</Label>
+		</StackPanel>
+</UserControl>

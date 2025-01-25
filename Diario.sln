@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diario", "Diario\Diario.csproj", "{DCF49898-86DE-41D0-8BC1-017800025618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diario.Desktop", "Diario.Desktop\Diario.Desktop.csproj", "{0B0BF5B3-029B-4B37-8D80-EB3A675D98A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diario-Setup", "Diario-Setup\Diario-Setup.csproj", "{88F066C1-F9D5-420D-8D52-FA3DAF1B1538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCF49898-86DE-41D0-8BC1-017800025618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF49898-86DE-41D0-8BC1-017800025618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF49898-86DE-41D0-8BC1-017800025618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF49898-86DE-41D0-8BC1-017800025618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0BF5B3-029B-4B37-8D80-EB3A675D98A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0BF5B3-029B-4B37-8D80-EB3A675D98A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0BF5B3-029B-4B37-8D80-EB3A675D98A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0BF5B3-029B-4B37-8D80-EB3A675D98A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F066C1-F9D5-420D-8D52-FA3DAF1B1538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F066C1-F9D5-420D-8D52-FA3DAF1B1538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F066C1-F9D5-420D-8D52-FA3DAF1B1538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F066C1-F9D5-420D-8D52-FA3DAF1B1538}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
