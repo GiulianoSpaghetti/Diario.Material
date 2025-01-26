@@ -21,7 +21,7 @@
 
 ## Su GNU/Linux
 
-Seguite le istruzioni su http://numeronesoft.ddns.net per installare il repository e poi installate il programma diario.
+Seguite le istruzioni su http://numeronesoft.ddns.net:8080 per installare il repository e poi installate il programma diario.
 
 
 Prerequisiti:
