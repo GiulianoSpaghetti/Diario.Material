@@ -16,10 +16,6 @@
     <None Remove="*.wixpdb" />
     <None Remove="*.wixobj" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Content Include="icon.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="WixSharp_wix4" Version="2.4.4" />
