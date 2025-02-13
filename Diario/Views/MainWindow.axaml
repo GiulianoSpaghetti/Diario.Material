@@ -6,7 +6,7 @@
         xmlns:views="clr-namespace:Diario.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Diario.Views.MainWindow"
-        Icon="/Assets/icon.ico"
+        Icon="/Assets/avalonia-icon.ico"
         Title="Diario">
 		<Window.Resources>
 		<ResourceDictionary x:Key="it">
