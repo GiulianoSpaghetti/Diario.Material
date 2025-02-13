@@ -12,6 +12,7 @@ public partial class App : Application
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
+        SQLitePCL.Batteries_V2.Init();
     }
 
     public override void OnFrameworkInitializationCompleted()
