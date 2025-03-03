@@ -7,7 +7,7 @@ namespace Diario_Setup
     {
         static void Main()
         {
-            var project = new Project("Diario",
+            Project project = new Project("Diario",
                               new Dir(@"[ProgramFiles64Folder]\\Diario",
                                   new DirFiles(@"*.*"),
                                   new Dir("runtimes",
