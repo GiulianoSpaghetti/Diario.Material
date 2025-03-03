@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Diario.Avalonia.ViewModels
+namespace Diario.ViewModels
 {
     public class Item
     {

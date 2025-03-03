@@ -9,7 +9,7 @@ using System.Data.SqlTypes;
 using System;
 using System.IO;
 using SQLite;
-using Diario.Avalonia.ViewModels;
+using Diario.ViewModels;
 
 namespace Diario.Pages;
 
