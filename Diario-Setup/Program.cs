@@ -22,21 +22,21 @@ namespace Diario_Setup
                               )
                         ),
                         new Dir(@"%ProgramMenu%",
-                         new ExeFileShortcut("Diario", "[ProgramFiles64Folder]\\Diario\\Diario.avalonia.Desktop.exe", "") { WorkingDirectory = "[INSTALLDIR]" }
+                         new ExeFileShortcut("Diario", "[ProgramFiles64Folder]\\Diario\\Diario.Desktop.exe", "") { WorkingDirectory = "[INSTALLDIR]" }
                       )//,
                        //new Property("ALLUSERS","0")
             );
 
             project.GUID = new Guid("47F5EFC4-E7EF-4484-87AE-0CB4BA3BFD30");
-            project.Version = new Version("0.6");
+            project.Version = new Version("0.6.0.4");
             project.Platform = Platform.x64;
-            project.SourceBaseDir = "C:\\Users\\numer\\source\\repos\\Diario\\Diario.Desktop\\bin\\Release\\net9.0-windows10.0.26100.0";
+            project.SourceBaseDir = "f:\\source\\Diario.Material\\Diario.Desktop\\bin\\Release\\net9.0-windows10.0.26100.0";
             project.LicenceFile = "LICENSE.rtf";
-            project.OutDir = "E:\\";
+            project.OutDir = "f:\\";
             project.ControlPanelInfo.Manufacturer = "Giulio Sorrentino";
             project.ControlPanelInfo.Name = "Diario.Metal";
             project.ControlPanelInfo.HelpLink = "https://github.com/GiulianoSpaghetti/Diario.Metal/issues";
-            project.Description = "Un diario privato in avalonia e linq";
+            project.Description = "Un diario privato in avalonia e linq senza crittazione nel dialetto Material di Google di Avalonia";
             //            project.Properties.SetValue("ALLUSERS", 0);
             project.BuildMsi();
         }

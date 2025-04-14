@@ -6,11 +6,11 @@
         xmlns:views="clr-namespace:Diario.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Diario.Views.MainWindow"
-        Icon="/Assets/avalonia-icon.ico"
+        Icon="/Assets/icon.ico"
         Title="Diario">
 		<Window.Resources>
 		<ResourceDictionary x:Key="it">
-			<x:String x:Key="Home">Home</x:String>
+			<x:String x:Key="Home">Il mio diario</x:String>
 			<x:String x:Key="Informazioni">Informazioni</x:String>
 			<x:String x:Key="RicercaT">Ricerca</x:String>
 			<x:String x:Key="Leggi">Leggi il topic</x:String>
@@ -20,13 +20,13 @@
 			<x:String x:Key="Ricerca">Ricerca tutti i topic fatti dopo la data</x:String>
 			<x:String x:Key="RicercaEffettuata">Ricerca effettuata.</x:String>
 			<x:String x:Key="CiSono"> Ci sono</x:String>
-			<x:String x:Key="elementi">topics. Tornare alla home per visualizzarli</x:String>
+			<x:String x:Key="elementi">topics. Tornare a Il mio diario per visualizzarli</x:String>
 			<x:String x:Key="DatabaseVuoto">La base di dati è vuota</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">La ricerca non ha elementi</x:String>
 			<x:String x:Key="Errore">Errore</x:String>
 		</ResourceDictionary>
 		<ResourceDictionary x:Key="en">
-			<x:String x:Key="Home">Home</x:String>
+			<x:String x:Key="Home">My own diary</x:String>
 			<x:String x:Key="Informazioni">Informations</x:String>
 			<x:String x:Key="RicercaT">Search</x:String>
 			<x:String x:Key="Leggi">Read topic</x:String>
@@ -36,13 +36,13 @@
 			<x:String x:Key="Ricerca">Find all topics inserted after the date</x:String>
 			<x:String x:Key="RicercaEffettuata">The search has been made.</x:String>
 			<x:String x:Key="CiSono"> There are</x:String>
-			<x:String x:Key="elementi">topics. Return to the home page to view them.</x:String>
+			<x:String x:Key="elementi">topics. Return to My Own Diary to view them.</x:String>
 			<x:String x:Key="DatabaseVuoto">Database is empty</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">The search has no topics</x:String>
 			<x:String x:Key="Errore">Error</x:String>
 		</ResourceDictionary>
 		<ResourceDictionary x:Key="es">
-			<x:String x:Key="Home">Inicio</x:String>
+			<x:String x:Key="Home">Mi Diario</x:String>
 			<x:String x:Key="Informazioni">Información</x:String>
 			<x:String x:Key="RicercaT">Búsqueda</x:String>
 			<x:String x:Key="Leggi">Leer tema</x:String>
@@ -52,13 +52,13 @@
 			<x:String x:Key="Ricerca">Buscar todos los temas insertados después de la fecha</x:String>
 			<x:String x:Key="RicercaEffettuata">La búsqueda se ha realizado.</x:String>
 			<x:String x:Key="CiSono">Hay</x:String>
-			<x:String x:Key="elementi">temas. Regresa a inicio para verlos.</x:String>
+			<x:String x:Key="elementi">temas. Regresa a Mi Diario para verlos.</x:String>
 			<x:String x:Key="DatabaseVuoto">La base de datos está vacía</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">La búsqueda no tiene temas</x:String>
 			<x:String x:Key="Errore">Error</x:String>
 		</ResourceDictionary>
 		<ResourceDictionary x:Key="fr">
-			<x:String x:Key="Home">Accueil</x:String>
+			<x:String x:Key="Home">Mon Journal</x:String>
 			<x:String x:Key="Informazioni">Informations</x:String>
 			<x:String x:Key="RicercaT">Rechercher</x:String>
 			<x:String x:Key="Leggi">Lire le sujet</x:String>
@@ -68,7 +68,7 @@
 			<x:String x:Key="Ricerca">Rechercher toutes les rubriques insérées après la date</x:String>
 			<x:String x:Key="RicercaEffettuata">La recherche a été faite.</x:String>
 			<x:String x:Key="CiSono"> Il y a</x:String>
-			<x:String x:Key="elementi">Sujets. Retournez à la page d'accueil pour les voir.</x:String>
+			<x:String x:Key="elementi">Sujets. Retournez à Mon Journal pour les voir.</x:String>
 			<x:String x:Key="DatabaseVuoto">La base de données est vide</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">La recherche n’a pas de sujets</x:String>
 			<x:String x:Key="Errore">Erreur</x:String>

@@ -6,8 +6,8 @@
     To suppress generation of this file remove `set ide=true` from the PostBuildEvent of the VS project
 </auto-generated>
 -->
-  <Package Compressed="yes" ProductCode="47f5efc4-e7ef-4484-87ae-0cb4baabfd30" Name="Diario" Language="1033" Version="0.6" UpgradeCode="47f5efc4-e7ef-4484-87ae-0cb4ba3bfd30" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
-    <SummaryInformation Codepage="Windows-1252" Description="Un diario privato in avalonia e linq" />
+  <Package Compressed="yes" ProductCode="47f5efc4-e7ef-4484-87ae-0cb4ba9bfd35" Name="Diario" Language="1033" Version="0.6.0.4" UpgradeCode="47f5efc4-e7ef-4484-87ae-0cb4ba3bfd30" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
+    <SummaryInformation Codepage="Windows-1252" Description="Un diario privato in avalonia e linq senza crittazione nel dialetto Material di Google di Avalonia" />
     <Media Id="1" Cabinet="Diario.cab" EmbedCab="yes" />
 
     <StandardDirectory Id="ProgramFiles64Folder">
@@ -15,6 +15,14 @@
 
         <Component Id="Component.Avalonia.Base.dll_1480204222" Guid="47f5efc4-e7ef-4484-87ae-0cb4e7881b35" Bitness="always64">
           <File Id="Avalonia.Base.dll_1480204222" Source="Avalonia.Base.dll" />
+        </Component>
+
+        <Component Id="Component.Avalonia.Controls.ColorPicker.dll_3255055198" Guid="47f5efc4-e7ef-4484-87ae-0cb4be491b87" Bitness="always64">
+          <File Id="Avalonia.Controls.ColorPicker.dll_3255055198" Source="Avalonia.Controls.ColorPicker.dll" />
+        </Component>
+
+        <Component Id="Component.Avalonia.Controls.DataGrid.dll_2316943455" Guid="47f5efc4-e7ef-4484-87ae-0cb452a3ab41" Bitness="always64">
+          <File Id="Avalonia.Controls.DataGrid.dll_2316943455" Source="Avalonia.Controls.DataGrid.dll" />
         </Component>
 
         <Component Id="Component.Avalonia.Controls.dll_1609248561" Guid="47f5efc4-e7ef-4484-87ae-0cb4c09f907a" Bitness="always64">
@@ -83,6 +91,10 @@
 
         <Component Id="Component.Avalonia.Themes.Fluent.dll_4080083041" Guid="47f5efc4-e7ef-4484-87ae-0cb493fa6ef6" Bitness="always64">
           <File Id="Avalonia.Themes.Fluent.dll_4080083041" Source="Avalonia.Themes.Fluent.dll" />
+        </Component>
+
+        <Component Id="Component.Avalonia.Themes.Simple.dll_381366156" Guid="47f5efc4-e7ef-4484-87ae-0cb4c9a11502" Bitness="always64">
+          <File Id="Avalonia.Themes.Simple.dll_381366156" Source="Avalonia.Themes.Simple.dll" />
         </Component>
 
         <Component Id="Component.Avalonia.Vulkan.dll_974469763" Guid="47f5efc4-e7ef-4484-87ae-0cb4f5f2bb8b" Bitness="always64">
@@ -234,7 +246,7 @@
     <StandardDirectory Id="ProgramMenuFolder">
 
       <Component Id="Component.Diario__" Guid="47f5efc4-e7ef-4484-87ae-0cb42619cc3a" Bitness="always64">
-        <Shortcut Id="ProgramMenuFolder.Diario__" WorkingDirectory="INSTALLDIR" Target="[ProgramFiles64Folder]\Diario\Diario.avalonia.Desktop.exe" Name="Diario.lnk" />
+        <Shortcut Id="ProgramMenuFolder.Diario__" WorkingDirectory="INSTALLDIR" Target="[ProgramFiles64Folder]\Diario\Diario.Desktop.exe" Name="Diario.lnk" />
 
         <CreateFolder />
 
@@ -246,7 +258,7 @@
 
     <WixUI Id="WixUI_Minimal" xmlns="http://wixtoolset.org/schemas/v4/wxs/ui" />
 
-    <WixVariable Id="WixUILicenseRtf" Value="C:\Users\numer\source\repos\Diario\Diario.Desktop\bin\Release\net9.0-windows10.0.26100.0\LICENSE.rtf" />
+    <WixVariable Id="WixUILicenseRtf" Value="f:\source\Diario.Material\Diario.Desktop\bin\Release\net9.0-windows10.0.26100.0\LICENSE.rtf" />
 
     <UIRef Id="WixUI_ErrorProgressText" />
 
@@ -254,6 +266,8 @@
 
     <Feature Id="Complete" Title="Complete" Level="1" AllowAbsent="yes">
       <ComponentRef Id="Component.Avalonia.Base.dll_1480204222" />
+      <ComponentRef Id="Component.Avalonia.Controls.ColorPicker.dll_3255055198" />
+      <ComponentRef Id="Component.Avalonia.Controls.DataGrid.dll_2316943455" />
       <ComponentRef Id="Component.Avalonia.Controls.dll_1609248561" />
       <ComponentRef Id="Component.Avalonia.DesignerSupport.dll_3261123495" />
       <ComponentRef Id="Component.Avalonia.Desktop.dll_2828519838" />
@@ -271,6 +285,7 @@
       <ComponentRef Id="Component.Avalonia.Remote.Protocol.dll_2454786132" />
       <ComponentRef Id="Component.Avalonia.Skia.dll_308585192" />
       <ComponentRef Id="Component.Avalonia.Themes.Fluent.dll_4080083041" />
+      <ComponentRef Id="Component.Avalonia.Themes.Simple.dll_381366156" />
       <ComponentRef Id="Component.Avalonia.Vulkan.dll_974469763" />
       <ComponentRef Id="Component.Avalonia.Win32.dll_4229150398" />
       <ComponentRef Id="Component.Avalonia.X11.dll_2955429394" />

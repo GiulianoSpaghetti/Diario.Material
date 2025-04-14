@@ -20,7 +20,8 @@ public partial class HomePage : UserControl
     private static string s;
     private static int id;
     private SQLite.TableQuery<Item> query;
-    public static HomePage Instance = null;
+    private static HomePage Instance = null;
+    public static HomePage HomePageInstance { get => Instance; } 
     public HomePage()
     {
         InitializeComponent();

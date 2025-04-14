@@ -19,7 +19,7 @@ public partial class RicercaPage : UserControl
     }
     private void CercaDalClicked(object sender, RoutedEventArgs e)
     {
-        HomePage.Instance.AggiornaEntita(new DateTime(filtraPerData.SelectedDate.Value.Year, filtraPerData.SelectedDate.Value.Month, filtraPerData.SelectedDate.Value.Day));
+        HomePage.HomePageInstance.AggiornaEntita(new DateTime(filtraPerData.SelectedDate.Value.Year, filtraPerData.SelectedDate.Value.Month, filtraPerData.SelectedDate.Value.Day));
 
     }
 
