@@ -9,7 +9,7 @@ namespace Diario.Pages;
 
 public partial class RicercaPage : UserControl
 {
-    public static RicercaPage Instance=null;
+    private static RicercaPage Instance=null;
     public RicercaPage()
     {
         InitializeComponent();
@@ -25,7 +25,7 @@ public partial class RicercaPage : UserControl
 
     public static void Traduci()
     {
-        Instance.Cerca.Content = MainWindow.d["RicercaT"] as string;
-        Instance.RicercaL.Content = MainWindow.d["Ricerca"] as string;
+        Instance.Cerca.Content = MainWindow.Dictionary["RicercaT"] as string;
+        Instance.RicercaL.Content = MainWindow.Dictionary["Ricerca"] as string;
     }
 }

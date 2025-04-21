@@ -28,7 +28,7 @@ namespace Diario_Setup
             );
 
             project.GUID = new Guid("47F5EFC4-E7EF-4484-87AE-0CB4BA3BFD30");
-            project.Version = new Version("0.6.0.4");
+            project.Version = new Version("0.6.0.5");
             project.Platform = Platform.x64;
             project.SourceBaseDir = "f:\\source\\Diario.Material\\Diario.Desktop\\bin\\Release\\net9.0-windows10.0.26100.0";
             project.LicenceFile = "LICENSE.rtf";

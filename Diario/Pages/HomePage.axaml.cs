@@ -33,10 +33,10 @@ public partial class HomePage : UserControl
 
     public static void Traduci()
     {
-        Instance.Leggi.Content = MainWindow.d["Leggi"] as string;
-        Instance.Modifica.Content = MainWindow.d["Modifica"] as string;
-        Instance.Elimina.Content = MainWindow.d["Elimina"] as string;
-        Instance.Inserisci.Content = MainWindow.d["Inserisci"] as string;
+        Instance.Leggi.Content = MainWindow.Dictionary["Leggi"] as string;
+        Instance.Modifica.Content = MainWindow.Dictionary["Modifica"] as string;
+        Instance.Elimina.Content = MainWindow.Dictionary["Elimina"] as string;
+        Instance.Inserisci.Content = MainWindow.Dictionary["Inserisci"] as string;
     }
 
     private void LeggiClicked(object sender, RoutedEventArgs e)
@@ -108,7 +108,7 @@ public partial class HomePage : UserControl
     private int GetIdFromEntita()
     {
         if (Dati.Items.Count == 0)
-            throw new Exception(MainWindow.d["DatabaseVuoto"] as string);
+            throw new Exception(MainWindow.Dictionary["DatabaseVuoto"] as string);
         s = Dati.SelectedItem.ToString();
         return Int32.Parse(s.Substring(0, s.IndexOf("-") - 1));
 
@@ -135,9 +135,9 @@ public partial class HomePage : UserControl
         }
         if (data != null)
             if (elementi.Count == 0)
-                MainView.MakeNotification(MainWindow.d["ImpossibileTrovareElementi"] as string);
+                MainView.MakeNotification(MainWindow.Dictionary["ImpossibileTrovareElementi"] as string);
             else
-                MainView.MakeNotification($"{MainWindow.d["RicercaEffettuata"]} {MainWindow.d["CiSono"]} {elementi.Count} {MainWindow.d["elementi"]}.");
+                MainView.MakeNotification($"{MainWindow.Dictionary["RicercaEffettuata"]} {MainWindow.Dictionary["CiSono"]} {elementi.Count} {MainWindow.Dictionary["elementi"]}.");
         Dati.IsEnabled = elementi.Count > 0;
         sstring.Text = "";
     }

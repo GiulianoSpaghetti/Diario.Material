@@ -6,7 +6,7 @@
     To suppress generation of this file remove `set ide=true` from the PostBuildEvent of the VS project
 </auto-generated>
 -->
-  <Package Compressed="yes" ProductCode="47f5efc4-e7ef-4484-87ae-0cb4ba9bfd35" Name="Diario" Language="1033" Version="0.6.0.4" UpgradeCode="47f5efc4-e7ef-4484-87ae-0cb4ba3bfd30" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
+  <Package Compressed="yes" ProductCode="47f5efc4-e7ef-4484-87ae-0cb4ba9bfd36" Name="Diario" Language="1033" Version="0.6.0.5" UpgradeCode="47f5efc4-e7ef-4484-87ae-0cb4ba3bfd30" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
     <SummaryInformation Codepage="Windows-1252" Description="Un diario privato in avalonia e linq senza crittazione nel dialetto Material di Google di Avalonia" />
     <Media Id="1" Cabinet="Diario.cab" EmbedCab="yes" />
 

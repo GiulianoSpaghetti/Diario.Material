@@ -44,8 +44,8 @@ public partial class MainView : UserControl
 
     public static void Traduci()
     {
-        Instance.HomeTitle.Content = MainWindow.d["Home"] as string;
-        Instance.RicercaTitle.Content = MainWindow.d["RicercaT"] as string;
-        Instance.InfoTitle.Content = MainWindow.d["Informazioni"] as string;
+        Instance.HomeTitle.Content = MainWindow.Dictionary["Home"] as string;
+        Instance.RicercaTitle.Content = MainWindow.Dictionary["RicercaT"] as string;
+        Instance.InfoTitle.Content = MainWindow.Dictionary["Informazioni"] as string;
     }
 }
