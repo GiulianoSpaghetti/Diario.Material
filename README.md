@@ -40,9 +40,6 @@ Prerequisiti:
 
 https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
-Note: i package sono system indpedent ed IL, per cui in teoria è sufficiente reinstallare il pacchetto ad ogni aggiornamento del desktop runtime ed avviare il programma una volta per ottenere il codice binario aggiornato.
-Ovviamente se aggiornano avalonia bisogna ricompilare.
-
 ## Internazionalizzazione
 
 Aprire il file MainWindows.axaml, all'interno del tag MainWindow.Resources ci sono qulli che vengono chiamati dizionari.
