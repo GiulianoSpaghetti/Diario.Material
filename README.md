@@ -19,26 +19,18 @@
 
 ## Come installare
 
-## Su GNU/Linux
-
-Seguite le istruzioni su http://numeronesoft.ddns.net:8080 per installare il repository e poi installate il programma diario.
-
-
-Prerequisiti:
-
-https://learn.microsoft.com/en-us/linux/packages
-
-Note: i package sono system indpedent ed IL, per cui in teoria è sufficiente reinstallare il pacchetto ad ogni aggiornamento del desktop runtime ed avviare il programma una volta per ottenere il codice binario aggiornato.
-Ovviamente se aggiornano avalonia bisogna ricompilare.
-
-
-## Su Windows
-
 I binari aggiornati li trovate su pling (https://www.pling.com/p/2296521/)
 
 Prerequisiti:
 
+
+## Windows
+
 https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
+
+## Debian
+
+https://learn.microsoft.com/en-us/linux/packages
 
 ## Internazionalizzazione
 
