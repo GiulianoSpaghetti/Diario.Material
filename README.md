@@ -34,8 +34,7 @@ Ovviamente se aggiornano avalonia bisogna ricompilare.
 
 ## Su Windows
 
-I binari aggiornati li trovate su pling.
-https://www.pling.com/p/2296521/
+I binari aggiornati li trovate su [pling(https://www.pling.com/p/2296521/)]
 
 Prerequisiti:
 
