@@ -19,16 +19,16 @@
 
 ## Come installare
 
-I binari aggiornati li trovate su pling (https://www.pling.com/p/2296521/)
+[![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2296521/)
 
-Prerequisiti:
+## Prerequisiti:
 
 
-## Windows
+### Windows
 
 https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
-## Debian
+#### Debian
 
 https://learn.microsoft.com/en-us/linux/packages
 
