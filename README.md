@@ -17,20 +17,49 @@
  
  La differenza tra un database relazionale ed un database ad oggetti è che mysql consente di stabilire relazioni tra le entità (con  l'id), mentre un database ad oggetti conserva solo l'oggetto.
 
+
 ## Come installare
+
+## Per unix
 
 [![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2296521/)
 
-## Prerequisiti:
 
+## Per windows
+(da copiare in esegui)
+
+    unigetui://giuliosorrentino&#46diario&#46avalonia
+
+
+## Prerequisti
 
 ### Windows
+https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.10
 
-https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
+### Unix
 
-#### Debian
+https://learn.microsoft.com/it-it/linux/packages
+
+Bisogna installare libice6 e libsm6 e bisogna precaricare freetype per farlo funzionare.
+
+E' stato dimostrato che il software è perfettamente bilanciato, perché il binario viene ottimizzato dal dotnet.
+
+Sapendo che il binario è per amd64, è possibile avviarlo con dotnet /usr/game/il_fortune_di_numerone/ilfortunedinumeronematerial.Desktop.dll sui sistemi arm64.
+
+## Installazione col repository (GNU/Linux)
+Per prima seguire la guida su https://learn.microsoft.com/it-it/dotnet/core/install/linux-debian
+
+Poi seguire la guida su http://numeronesoft.ddns.net:8080
+
+e poi update e install dario
+
+Prerequisites:
 
 https://learn.microsoft.com/en-us/linux/packages
+
+Note: i pacchetti sono in IL, quindi in teoria basta reinstallare il software ad ogni update del dotnet e quindi avviare una volta il programma per ottenere il binario 
+
+
 
 ## Internazionalizzazione
 
