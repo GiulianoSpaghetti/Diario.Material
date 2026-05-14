@@ -34,7 +34,10 @@
 ## Prerequisti
 
 ### Windows
-https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.10
+
+    unigetui://DesktopRuntime
+    
+installare il windows desktopruntime 10
 
 ### Unix
 
