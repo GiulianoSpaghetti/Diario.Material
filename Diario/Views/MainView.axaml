@@ -32,13 +32,14 @@
 				  </ScrollViewer>
 			  </controls:NavigationDrawer.LeftDrawerContent>
 			  <DockPanel LastChildFill="true">
+			  	<ToggleButton Name="NavDrawerSwitch" Padding="4" Content="Menu" />
 				  <Carousel Name="PageCarousel"
 		HorizontalAlignment="Stretch">
 					  <Carousel.Styles>
 						  <Style Selector="Carousel#PageCarousel:not(.no-transitions)">
 							  <Setter Property="PageTransition">
-								  <PageSlide Duration="1.00" SlideOutEasing="ElasticEaseOut"
-											 SlideInEasing="ElasticEaseIn" />
+								  <PageSlide Duration="1.00" SlideOutEasing="CircularEaseOut"
+											 SlideInEasing="CircularEaseIn" />
 							  </Setter>
 						  </Style>
 					  </Carousel.Styles>
