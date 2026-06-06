@@ -1,0 +1,45 @@
+name: .NET AVALONIA Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    env:
+      Solution_Name: diario.slnx
+      Configuration: ${{ matrix.configuration }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+
+    - name: Restore packages
+      run: dotnet restore diario.slnx -r win-x64
+
+    - name: Build Avalonia App
+      run: |
+        dotnet build Diario.Desktop/Diario.Desktop.csproj -c $env:Configuration -r win-x64
+      shell: pwsh
+
+    - name: Upload Avalonia App
+      uses: actions/upload-artifact@v4
+      with:
+        name: App
+        path: Diario.Desktop/bin/Release/net10.0-windows10.0.26100.0
+        include-hidden-files: true
+        if-no-files-found: error
