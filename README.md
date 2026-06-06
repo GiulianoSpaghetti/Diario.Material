@@ -1,3 +1,5 @@
+[![.NET AVALONIA Build](https://github.com/GiulianoSpaghetti/Diario.Material/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/GiulianoSpaghetti/Diario.Material/actions/workflows/dotnet-desktop.yml)
+
 # Diario
 
 :it: Made in Italy. Il primo prodotto maui ad utilizzare linq su avalonia con dialetto material ed internazionalizzato nel mondo ad usare le snackbar.
