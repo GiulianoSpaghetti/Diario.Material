@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 			 xmlns:pages="clr-namespace:Diario.Pages"
-			  xmlns:mv="Diario.MainViewModels"	
+			 xmlns:mv="Diario.ViewModels"
 			 x:DataType="mv:MainViewModel"
 			 x:Class="Diario.Pages.HomePage">
 
