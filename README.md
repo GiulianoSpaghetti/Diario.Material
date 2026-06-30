@@ -4,6 +4,8 @@
 
 :it: Made in Italy. Il primo prodotto maui ad utilizzare linq su avalonia con dialetto material ed internazionalizzato nel mondo ad usare le snackbar.
 
+Il primo diario ad essere a norma secondo le leggi italiane
+
 ![Napoli-Logo](https://github.com/user-attachments/assets/802ba5f0-bade-46f6-a4ed-74526258b3f6)
 ![made in parco grifeo](https://github.com/user-attachments/assets/53db171f-cfc6-45d7-b46f-963e99723741)
 
@@ -64,23 +66,8 @@ https://learn.microsoft.com/en-us/linux/packages
 
 Note: i pacchetti sono in IL, quindi in teoria basta reinstallare il software ad ogni update del dotnet e quindi avviare una volta il programma per ottenere il binario 
 
-## Screenshots
-
-## Su debian
-
-![Schermata del 2025-01-25 18-21-39](https://github.com/user-attachments/assets/c38cdc21-7641-475b-9da1-0a45bdad6804)
-![Schermata del 2025-01-25 18-21-44](https://github.com/user-attachments/assets/186606e0-5ece-46ab-a726-38ea6837fa26)
-![Schermata del 2025-01-25 18-22-00](https://github.com/user-attachments/assets/f420b0cd-1645-44dc-b5e9-adb0757ed153)
-![Schermata del 2025-01-25 18-22-08](https://github.com/user-attachments/assets/83e89800-52a7-417e-a86c-308bc5bd75a6)
-
-## Su Windows
-
-<img width="1431" alt="2025-01-25 (5)" src="https://github.com/user-attachments/assets/37f734f6-1efb-4365-be70-c940b9ce0098" />
-<img width="1431" alt="2025-01-25 (4)" src="https://github.com/user-attachments/assets/10be54ad-3d2c-4606-a842-0d90d06755d8" />
-
-## Video di pesentazione
-
-https://youtu.be/tVXf1eiv9yM
+## Manuale di istruzioni
+https://photos.app.goo.gl/UhkQT6XqXntW6tDSA
 
 ## Donazione
 
