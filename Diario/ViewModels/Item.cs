@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Diario.ViewModels
 {
-    internal class Item
+    public class Item
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
