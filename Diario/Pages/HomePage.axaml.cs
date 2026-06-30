@@ -1,29 +1,35 @@
-<UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-			 xmlns:pages="clr-namespace:Diario.Pages"
-			 x:DataType="pages:HomePage"
-			 x:Class="Diario.Pages.HomePage">
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Interactivity;
+using Avalonia.Markup.Xaml;
+using Diario.Views;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Collections.Generic;
+using System.Data.SqlTypes;
+using System;
+using System.IO;
+using SQLite;
+using Diario.ViewModels;
+using System.Collections.Immutable;
 
-	
-	<StackPanel>
-		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" Height="400">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<StackPanel Orientation="Horizontal" Spacing="10">
-						<TextBlock x:Name="id" Text="{Binding Id}" />
-						<TextBlock Text="{Binding testo}" />
-						<TextBlock Text="{Binding data}" />
-					</StackPanel>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
-	    <TextBox Text="{Binding Sstring}" TextWrapping="Wrap" AcceptsReturn="True"/>
-		<Button x:Name="Leggi" Command="{Binding Leggi}" />
-		<Button x:Name="Modifica" Command="{Binding ModificaClicked}" />
-		<Button x:Name="Inserisci" Command="{Binding Scrivi}" />
-		<Button x:Name="Elimina" Command="{Binding Cancella}" />
-		</StackPanel>
-</UserControl>
+namespace Diario.Pages;
+
+public partial class HomePage : UserControl
+{
+    private static HomePage Instance = null;
+    public static HomePage HomePageInstance { get => Instance; }
+
+    public HomePage()
+    {
+        DataContext ??= MainViewModel.GetInstance();
+        InitializeComponent();
+        Instance = this;
+    }
+    public static void Traduci()
+    {
+        Instance.Leggi.Content = MainWindow.Dictionary["Leggi"] as string;
+        Instance.Modifica.Content = MainWindow.Dictionary["Modifica"] as string;
+        Instance.Elimina.Content = MainWindow.Dictionary["Elimina"] as string;
+        Instance.Inserisci.Content = MainWindow.Dictionary["Inserisci"] as string;
+    }
+}
