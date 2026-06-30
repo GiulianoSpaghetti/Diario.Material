@@ -8,7 +8,7 @@
 			 x:Class="Diario.Pages.RicercaPage">
 	<StackPanel>
 		<Label x:Name="RicercaL">Cerca tutti i topic a partitre da:</Label>
-		<DatePicker x:Name="filtraPerData" />
-		<Button x:Name="Cerca" Click="CercaDalClicked" />
+		<DatePicker x:Name="filtraPerData" SelectedDate="{Binding Data}" />
+		<Button x:Name="Cerca" Command="{Binding AggiornaEntita}" />
 	</StackPanel>
 </UserControl>
