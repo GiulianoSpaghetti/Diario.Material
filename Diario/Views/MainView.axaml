@@ -15,7 +15,7 @@
 			<x:String x:Key="Home">Il mio diario</x:String>
 			<x:String x:Key="Informazioni">Informazioni</x:String>
 			<x:String x:Key="RicercaT">Ricerca</x:String>
-			<x:String x:Key="Leggi">Leggi il topic</x:String>
+			<x:String x:Key="Leggi">Leggi i topic</x:String>
 			<x:String x:Key="Inserisci">Inserisci il topic</x:String>
 			<x:String x:Key="Modifica">Modifica il topic</x:String>
 			<x:String x:Key="Elimina">Eliminare il topic</x:String>
@@ -26,12 +26,15 @@
 			<x:String x:Key="DatabaseVuoto">La base di dati è vuota</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">La ricerca non ha elementi</x:String>
 			<x:String x:Key="Errore">Errore</x:String>
+			<x:String x:Key="ElementoInserito">Topic Inserito</x:String>
+			<x:String x:Key="ElementoModificato">Topic Modificato</x:String>
+			<x:String x:Key="ElementoEliminato">Topic Eliminato</x:String>
 		</ResourceDictionary>
 		<ResourceDictionary x:Key="en">
 			<x:String x:Key="Home">My own diary</x:String>
 			<x:String x:Key="Informazioni">Informations</x:String>
 			<x:String x:Key="RicercaT">Search</x:String>
-			<x:String x:Key="Leggi">Read topic</x:String>
+			<x:String x:Key="Leggi">Read topics</x:String>
 			<x:String x:Key="Inserisci">Insert topic</x:String>
 			<x:String x:Key="Modifica">Modify Topic</x:String>
 			<x:String x:Key="Elimina">Delete Topic</x:String>
@@ -42,12 +45,15 @@
 			<x:String x:Key="DatabaseVuoto">Database is empty</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">The search has no topics</x:String>
 			<x:String x:Key="Errore">Error</x:String>
+			<x:String x:Key="ElementoInserito">Topic Inserted</x:String>
+			<x:String x:Key="ElementoModificato">Topic Modified</x:String>
+			<x:String x:Key="ElementoEliminato">Topic Deleted</x:String>
 		</ResourceDictionary>
 		<ResourceDictionary x:Key="es">
 			<x:String x:Key="Home">Mi Diario</x:String>
 			<x:String x:Key="Informazioni">Información</x:String>
 			<x:String x:Key="RicercaT">Búsqueda</x:String>
-			<x:String x:Key="Leggi">Leer tema</x:String>
+			<x:String x:Key="Leggi">Leer temas</x:String>
 			<x:String x:Key="Inserisci">Insertar tema</x:String>
 			<x:String x:Key="Modifica">Modificar tema</x:String>
 			<x:String x:Key="Elimina">Eliminar tema</x:String>
@@ -58,13 +64,15 @@
 			<x:String x:Key="DatabaseVuoto">La base de datos está vacía</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">La búsqueda no tiene temas</x:String>
 			<x:String x:Key="Errore">Error</x:String>
-		</ResourceDictionary>
+			<x:String x:Key="ElementoInserito">Tema Inserito</x:String>
+			<x:String x:Key="ElementoModificato">Tema Modificado</x:String>
+			<x:String x:Key="ElementoEliminato">Tema Eliminado</x:String>		</ResourceDictionary>
 		<ResourceDictionary x:Key="fr">
 			<x:String x:Key="Home">Mon Journal</x:String>
 			<x:String x:Key="Informazioni">Informations</x:String>
 			<x:String x:Key="RicercaT">Rechercher</x:String>
-			<x:String x:Key="Leggi">Lire le sujet</x:String>
-			<x:String x:Key="Inserisci">Insérer un sujes</x:String>
+			<x:String x:Key="Leggi">Lire le sujets</x:String>
+			<x:String x:Key="Inserisci">Insérer un sujet</x:String>
 			<x:String x:Key="Modifica">Modifier le sujet</x:String>
 			<x:String x:Key="Elimina">Supprimer le sujet</x:String>
 			<x:String x:Key="Ricerca">Rechercher toutes les rubriques insérées après la date</x:String>
@@ -74,6 +82,9 @@
 			<x:String x:Key="DatabaseVuoto">La base de données est vide</x:String>
 			<x:String x:Key="ImpossibileTrovareElementi">La recherche n’a pas de sujets</x:String>
 			<x:String x:Key="Errore">Erreur</x:String>
+			<x:String x:Key="ElementoInserito">Sujet inséré</x:String>
+			<x:String x:Key="ElementoModificato">Sujet modifié</x:String>
+			<x:String x:Key="ElementoEliminato">Sujet supprimé</x:String>
 		</ResourceDictionary>
 	</UserControl.Resources>
 
