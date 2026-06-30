@@ -1,18 +1,29 @@
-﻿<UserControl xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 			 xmlns:pages="clr-namespace:Diario.Pages"
 			 x:DataType="pages:HomePage"
-             x:Class="Diario.Pages.HomePage">
-<StackPanel>
+			 x:Class="Diario.Pages.HomePage">
 
-			<ComboBox x:Name="Dati" />
-			<TextBox x:Name="sstring" Text="" TextWrapping="Wrap" AcceptsReturn="True"/>
-			<Button x:Name="Leggi" Click="LeggiClicked" />
-		    <Button x:Name="Modifica" Click="ModificaClicked" /> 
-			<Button x:Name="Inserisci" Click="InserisciClicked" />
-			<Button x:Name="Elimina" Click="EliminaClicked" />
+	
+	<StackPanel>
+		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" Height="400">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<TextBlock x:Name="id" Text="{Binding Id}" />
+						<TextBlock Text="{Binding testo}" />
+						<TextBlock Text="{Binding data}" />
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	    <TextBox Text="{Binding Sstring}" TextWrapping="Wrap" AcceptsReturn="True"/>
+		<Button x:Name="Leggi" Command="{Binding Leggi}" />
+		<Button x:Name="Modifica" Command="{Binding ModificaClicked}" />
+		<Button x:Name="Inserisci" Command="{Binding Scrivi}" />
+		<Button x:Name="Elimina" Command="{Binding Cancella}" />
 		</StackPanel>
 </UserControl>
