@@ -9,19 +9,23 @@ using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Reactive;
+using System.Xml.Linq;
 
 namespace Diario.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {
     private string _s;
+    private string _status;
+    public string Status { get => _status;
+        set {
+            this.RaiseAndSetIfChanged(ref _status, value);
+            MainView.MakeNotification(_status);
+        }
+    }
     private Item _selectedEntita;
     private DateTimeOffset _d;
     public DateTimeOffset Data { get => _d; set => this.RaiseAndSetIfChanged(ref _d, value); }
-    public ReactiveCommand<Unit, Unit> Leggi { get; }
-    public ReactiveCommand<Unit, Unit> Scrivi { get; }
-    public ReactiveCommand<Unit, Unit> Cancella { get; }
-    public ReactiveCommand<Unit, Unit> Modifica { get; }
     public Item SelectedEntita
     {
         get => _selectedEntita;
@@ -51,15 +55,10 @@ public class MainViewModel : ViewModelBase
         con = new SQLiteConnection(cs);
         con.CreateTable<Item>();
         Entita = new ObservableCollection<Item>();
-        Leggi= ReactiveCommand.Create(LeggiClicked);
-        Scrivi =ReactiveCommand.Create(InserisciClicked);
-        Cancella=ReactiveCommand.Create(EliminaClicked);
-        Modifica= ReactiveCommand.Create(ModificaClicked);
-        //     AggiornaEntita();
         _d = DateTime.Now;
     }
 
-    private void LeggiClicked()
+    public void LeggiClicked()
     {
         Entita.Clear();
         query = con.Table<Item>();
@@ -73,7 +72,7 @@ public class MainViewModel : ViewModelBase
     {
         if (SelectedEntita == null)
         {
-            MainView.MakeNotification(MainWindow.Dictionary["ImpossibileTrovareElementi"] as string);
+            Status=MainView.Dictionary["ImpossibileTrovareElementi"] as string;
             return;
         }
         SelectedEntita.testo=Sstring;
@@ -91,20 +90,21 @@ public class MainViewModel : ViewModelBase
     {
         if (SelectedEntita == null)
         {
-            MainView.MakeNotification(MainWindow.Dictionary["ImpossibileTrovareElementi"] as string);
+            Status=MainView.Dictionary["ImpossibileTrovareElementi"] as string;
             return;
         }
         con.Delete(SelectedEntita);
         query = con.Table<Item>();
     }
-    public void AggiornaEntita()
+    public void RicercaClicked()
     {
+        Entita.Clear();
         List<Item> elementi;
         if (Data == null)
             elementi = con.Table<Item>().ToList();
         else
         {
-            query = con.Table<Item>().Where(v => v.data >= _d);
+            query = con.Table<Item>().Where(v => v.data >= Data);
             elementi = query.ToList();
         }
         if (elementi.Count > 0)
@@ -116,9 +116,9 @@ public class MainViewModel : ViewModelBase
         }
         if (Data != null)
             if (elementi.Count == 0)
-                MainView.MakeNotification(MainWindow.Dictionary["ImpossibileTrovareElementi"] as string);
+                Status=MainView.Dictionary["ImpossibileTrovareElementi"] as string;
             else
-                MainView.MakeNotification($"{MainWindow.Dictionary["RicercaEffettuata"]} {MainWindow.Dictionary["CiSono"]} {elementi.Count} {MainWindow.Dictionary["elementi"]}.");
+                Status=$"{MainView.Dictionary["RicercaEffettuata"]} {MainView.Dictionary["CiSono"]} {elementi.Count} {MainView.Dictionary["elementi"]}.";
     }
 
 }
