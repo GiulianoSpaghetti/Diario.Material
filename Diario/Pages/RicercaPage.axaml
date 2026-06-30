@@ -4,7 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:pages="clr-namespace:Diario.Pages"
-			 x:Class="Diario.Pages.RicercaPage">
+			 x:Class="Diario.Pages.RicercaPage"
+			 x:CompileBindings="False">
 	<StackPanel>
 		<Label x:Name="RicercaL">Cerca tutti i topic a partitre da:</Label>
 		<DatePicker x:Name="filtraPerData" SelectedDate="{Binding Data}" />
