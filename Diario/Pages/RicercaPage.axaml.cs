@@ -19,7 +19,7 @@ public partial class RicercaPage : UserControl
     }
     public static void Traduci()
     {
-        Instance.Cerca.Content = MainWindow.Dictionary["RicercaT"] as string;
-        Instance.RicercaL.Content = MainWindow.Dictionary["Ricerca"] as string;
+        Instance.Cerca.Content = MainView.Dictionary["RicercaT"] as string;
+        Instance.RicercaL.Content = MainView.Dictionary["Ricerca"] as string;
     }
 }
