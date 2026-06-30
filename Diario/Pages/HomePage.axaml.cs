@@ -3,7 +3,6 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Diario.Views;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System;
