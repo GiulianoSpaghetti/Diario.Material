@@ -9,6 +9,6 @@
 	<StackPanel>
 		<Label x:Name="RicercaL">Cerca tutti i topic a partitre da:</Label>
 		<DatePicker x:Name="filtraPerData" SelectedDate="{Binding Data}" />
-		<Button x:Name="Cerca" Command="{Binding AggiornaEntita}" />
+		<Button x:Name="Cerca" Command="{Binding RicercaClicked}" />
 	</StackPanel>
 </UserControl>
