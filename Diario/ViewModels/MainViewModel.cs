@@ -76,8 +76,9 @@ public class MainViewModel : ViewModelBase
             return;
         }
         SelectedEntita.testo=Sstring;
-            SelectedEntita.data = DateTime.Now;
-            con.Update(SelectedEntita);
+        SelectedEntita.data = DateTime.Now;
+        con.Update(SelectedEntita);
+        Status= MainView.Dictionary["ElementoModificato"] as string;
     }
     public void InserisciClicked()
     {
@@ -85,6 +86,7 @@ public class MainViewModel : ViewModelBase
         item.data = DateTime.Now;
         item.testo = Sstring;
         con.Insert(item);
+        Status = MainView.Dictionary["ElementoInserito"] as string;
     }
     public void EliminaClicked()
     {
@@ -95,6 +97,7 @@ public class MainViewModel : ViewModelBase
         }
         con.Delete(SelectedEntita);
         query = con.Table<Item>();
+        Status = MainView.Dictionary["ElementoEliminato"] as string;
     }
     public void RicercaClicked()
     {
