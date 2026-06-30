@@ -8,8 +8,8 @@
 			 x:CompileBindings="False">
 
 	
-	<StackPanel>
-		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" Height="400">
+<StackPanel VerticalAlignment="Bottom">
+		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" Height="600">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<StackPanel Orientation="Horizontal" Spacing="10">
@@ -21,9 +21,9 @@
 			</ListBox.ItemTemplate>
 		</ListBox>
 	    <TextBox Text="{Binding Sstring}" TextWrapping="Wrap" AcceptsReturn="True"/>
-		<Button x:Name="Leggi" Command="{Binding Leggi}" />
+		<Button x:Name="Leggi" Command="{Binding LeggiClicked}" />
 		<Button x:Name="Modifica" Command="{Binding ModificaClicked}" />
-		<Button x:Name="Inserisci" Command="{Binding Scrivi}" />
-		<Button x:Name="Elimina" Command="{Binding Cancella}" />
+		<Button x:Name="Inserisci" Command="{Binding InserisciClicked}" />
+		<Button x:Name="Elimina" Command="{Binding EliminaClicked}" />
 		</StackPanel>
 </UserControl>
