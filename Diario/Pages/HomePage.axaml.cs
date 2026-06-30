@@ -27,9 +27,9 @@ public partial class HomePage : UserControl
     }
     public static void Traduci()
     {
-        Instance.Leggi.Content = MainWindow.Dictionary["Leggi"] as string;
-        Instance.Modifica.Content = MainWindow.Dictionary["Modifica"] as string;
-        Instance.Elimina.Content = MainWindow.Dictionary["Elimina"] as string;
-        Instance.Inserisci.Content = MainWindow.Dictionary["Inserisci"] as string;
+        Instance.Leggi.Content = MainView.Dictionary["Leggi"] as string;
+        Instance.Modifica.Content = MainView.Dictionary["Modifica"] as string;
+        Instance.Elimina.Content = MainView.Dictionary["Elimina"] as string;
+        Instance.Inserisci.Content = MainView.Dictionary["Inserisci"] as string;
     }
 }
