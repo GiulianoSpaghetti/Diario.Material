@@ -7,8 +7,8 @@
 			 x:Class="Diario.Pages.InfoPage">
 	<StackPanel>
 		<Label>Version: 1.0</Label>
-		<Label>ⓒ Giulio Sorrentino 2025-2026 some right reserved</Label>
-		<Label>This software is under GPLv3 or, at your opinion, any later version</Label>
+		<Label>ⓒ Giulio Sorrentino 2025-2026 all rights reserved</Label>
+		<Label>This software is under MIT. Reselling is furbished</Label>
 		<Label>https://www.opencode.net/numerone/Diario-Material</Label>
 		</StackPanel>
 </UserControl>
