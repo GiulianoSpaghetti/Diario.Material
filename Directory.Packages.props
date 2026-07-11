@@ -6,27 +6,25 @@
   <ItemGroup>
     <!-- Avalonia packages -->
     <!-- Important: keep version in sync! -->
-    <PackageVersion Include="Avalonia" Version="12.0.5" />
-    <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.0.5" />
-    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.0.5" />
-    <PackageVersion Include="Avalonia.Desktop" Version="12.0.5" />
+    <PackageVersion Include="Avalonia" Version="12.1.0" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.0" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.0" />
+    <PackageVersion Include="Avalonia.Desktop" Version="12.1.0" />
     <PackageVersion Include="DialogHost.Avalonia" Version="0.12.2" />
-    <PackageVersion Include="HarfBuzzSharp" Version="8.3.1.5" />
-    <PackageVersion Include="HarfBuzzSharp.NativeAssets.Linux" Version="8.3.1.5" />
-    <PackageVersion Include="HarfBuzzSharp.NativeAssets.MacOS" Version="8.3.1.5" />
-    <PackageVersion Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="8.3.1.6-preview.1.1" />
-    <PackageVersion Include="HarfBuzzSharp.NativeAssets.Win32" Version="8.3.1.5" />
+    <PackageVersion Include="HarfBuzzSharp" Version="14.2.1" />
+    <PackageVersion Include="HarfBuzzSharp.NativeAssets.Linux" Version="14.2.1" />
+    <PackageVersion Include="HarfBuzzSharp.NativeAssets.MacOS" Version="14.2.1" />
+    <PackageVersion Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="14.2.1" />
+    <PackageVersion Include="HarfBuzzSharp.NativeAssets.Win32" Version="14.2.1" />
     <PackageVersion Include="Material.Avalonia" Version="3.17.0" />
     <PackageVersion Include="ReactiveUI.Avalonia" Version="12.0.3" />
-    <PackageVersion Include="SkiaSharp" Version="3.119.4" />
-    <PackageVersion Include="SkiaSharp.NativeAssets.Linux" Version="3.119.4" />
-    <PackageVersion Include="SkiaSharp.NativeAssets.MacOS" Version="3.119.4" />
-    <PackageVersion Include="SkiaSharp.NativeAssets.WebAssembly" Version="3.119.4" />
-    <PackageVersion Include="SkiaSharp.NativeAssets.Win32" Version="3.119.4" />
-		<PackageVersion Include="SourceGear.sqlite3" Version="3.50.4.5" />
+    <PackageVersion Include="SkiaSharp" Version="4.150.0" />
+    <PackageVersion Include="SkiaSharp.NativeAssets.Linux" Version="4.150.0" />
+    <PackageVersion Include="SkiaSharp.NativeAssets.MacOS" Version="4.150.0" />
+    <PackageVersion Include="SkiaSharp.NativeAssets.WebAssembly" Version="4.150.0" />
+    <PackageVersion Include="SkiaSharp.NativeAssets.Win32" Version="4.150.0" />
+    <PackageVersion Include="SourceGear.sqlite3" Version="3.50.4.5" />
     <PackageVersion Include="Splat" Version="19.4.1" />
-    <PackageVersion Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.2.0.2" />
-    <PackageVersion Include="WixSharp_wix4" Version="2.13.0" />
     <PackageVersion Include="WixToolset.Dtf.WindowsInstaller" Version="7.0.0" />
     <PackageVersion Include="WixToolset.Mba.Core" Version="4.0.6" />
     <PackageVersion Include="sqlite-net-pcl" Version="1.9.172" />
@@ -34,6 +32,6 @@
     <PackageVersion Include="SQLitePCLRaw.bundle_green" Version="2.1.11" />
     <PackageVersion Include="SQLitePCLRaw.core" Version="3.0.3" />
     <PackageVersion Include="SQLitePCLRaw.provider.e_sqlite3" Version="3.0.3" />
-    <PackageVersion Include="Tmds.DBus.Protocol" Version="0.94.1" />
+    <PackageVersion Include="Tmds.DBus.Protocol" Version="0.94.2" />
   </ItemGroup>
 </Project>
