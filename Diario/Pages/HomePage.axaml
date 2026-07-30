@@ -9,7 +9,7 @@
 
 	
 <StackPanel VerticalAlignment="Bottom">
-		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" Height="600">
+		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" MaxHeight="500">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<StackPanel Orientation="Horizontal" Spacing="10">

@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Reactive;
 using System.Xml.Linq;
 
 namespace Diario.ViewModels;
