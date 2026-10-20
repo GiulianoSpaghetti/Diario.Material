@@ -23,7 +23,7 @@ jobs:
       with:
        dotnet-version: '11.0.x'
        dotnet-quality: 'preview'
-    - run: dotnet build Diario.Desktop/Diario.Desktop.csproj -c $env:Configuration -r win-arm64 -p:UseMonoRuntime=false
+    - run: dotnet build Diario.Desktop/Diario.Desktop.csproj -c $env:Configuration -r win-x64 -p:UseMonoRuntime=false
       shell: pwsh
 
     - name: Upload Avalonia App
