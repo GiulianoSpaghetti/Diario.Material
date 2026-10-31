@@ -3,7 +3,7 @@
 		<OutputType>WinExe</OutputType>
 		<!--If you are willing to use Windows/MacOS native APIs you will need to create 3 projects.
     One for Windows with net8.0-windows TFM, one for MacOS with net8.0-macos and one with net8.0 TFM for Linux.-->
-		<TargetFramework>net11.0-windows10.0.26100.0</TargetFramework>
+		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
@@ -21,12 +21,14 @@
     <PackageReference Include="HarfBuzzSharp.NativeAssets.WebAssembly" />
     <PackageReference Include="harfbuzzsharp.nativeassets.win32" />
     <PackageReference Include="Material.Avalonia" />
+    <PackageReference Include="MicroCom.Runtime" />
     <PackageReference Include="ReactiveUI.Avalonia" />
     <PackageReference Include="SkiaSharp" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" />
     <PackageReference Include="SkiaSharp.NativeAssets.macOS" />
     <PackageReference Include="SkiaSharp.NativeAssets.WebAssembly" />
     <PackageReference Include="SkiaSharp.NativeAssets.Win32" />
+    <PackageReference Include="SourceGear.sqlite3" />
     <PackageReference Include="Splat" />
     <PackageReference Include="sqlite-net-pcl" />
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" />
