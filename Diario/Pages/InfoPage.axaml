@@ -1,4 +1,4 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+<ContentPage xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,4 +11,4 @@
 		<Label>This software is under MIT. Reselling is furbished</Label>
 		<Button Click="OnSito_Click">More Informations</Button>
 		</StackPanel>
-</UserControl>
+</ContentPage>
