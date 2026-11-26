@@ -36,6 +36,7 @@ public class MainViewModel : ViewModelBase
         get => _s;
         set => this.RaiseAndSetIfChanged(ref _s, value);
     }
+    public int Height { get => App.Height; }
     public ObservableCollection<Item> Entita { get; private set; }
     private static string cs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "test.db");
     private static SQLiteConnection con;

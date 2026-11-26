@@ -9,6 +9,8 @@ namespace Diario;
 
 public partial class App : Application
 {
+    public static int Width { get; private set; }
+    public static int Height { get; private set; }
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
@@ -19,10 +21,12 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
+            Height = 600;
             desktop.MainWindow = new MainWindow();
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
+            Height = 500;
             singleViewPlatform.MainView = new MainView();
         }
 

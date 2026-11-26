@@ -9,14 +9,14 @@
 
 	
 <StackPanel VerticalAlignment="Bottom">
-		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" MaxHeight="500">
+		<ListBox x:Name="Elementi" ItemsSource="{Binding Entita}" SelectedItem="{Binding SelectedEntita, Mode=TwoWay}" MaxHeight="{Binding Height}">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
-					<StackPanel Orientation="Horizontal" Spacing="10">
-						<TextBlock x:Name="id" Text="{Binding Id}" />
-						<TextBlock Text="{Binding testo}" />
-						<TextBlock Text="{Binding data}" />
-					</StackPanel>
+					<Grid ColumnDefinitions="Auto, *, Auto" ColumnSpacing="10">
+						<TextBlock Grid.Column="0" x:Name="id" Text="{Binding Id}" />
+		                <TextBlock Grid.Column="1" Text="{Binding testo}" TextWrapping="Wrap" />
+                        <TextBlock Grid.Column="2"  Text="{Binding data}" />
+					</Grid>
 				</DataTemplate>
 			</ListBox.ItemTemplate>
 		</ListBox>
